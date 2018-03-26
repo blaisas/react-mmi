@@ -1,0 +1,8 @@
+.machine{
+    color: red;
+    border :2px;
+}
+
+.header, .footer {
+    background-color: blue;
+}

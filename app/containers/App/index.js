@@ -7,13 +7,18 @@ import React from 'react';
 
 // On importe ici les composants qu'on veut afficher
 import Machine from '../../components/Machine.js';
+import header from '../../components/header.js';
+import footer from '../../components/footer.js';
 // On peut aussi importer du CSS de la meme facon.
+import '../../css/style.css';
 
 export default function App() {
   return (
-    // Un return doit retourner un seul élément du DOM
-    // Si on veut afficher plusieurs éléments adjacents,
-    // On devra donc les encapsuler dans une DIV parente.
-    <Machine />
-  );
+    <div id="machine" >
+    <Machine number="1" isActive="yes" title = "Café !"/>
+     <Machine number="2" isActive="no" title = "Café noisette!"/>
+      <Machine number="3" isActive="no" title = "thé !"/>
+       <Machine number="4" isActive="no" title = "soupe !"/>
+       </div>
+    );
 }
