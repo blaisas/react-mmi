@@ -10,7 +10,7 @@ class header extends React.Component {
     // Dans tous les cas, afficher
     return (
       <div className="header">
-      <p>  j'adore le { this.props.title } </p>
+      <p> Le Haut </p>
   
               
             </div>

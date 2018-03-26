@@ -10,7 +10,7 @@ class footer extends React.Component {
     // Dans tous les cas, afficher
     return (
       <div className="footer">
-      <p>  j'adore le { this.props.title } </p>
+      <p> Le bas </p>
   
               
             </div>

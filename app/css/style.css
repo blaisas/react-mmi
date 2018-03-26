@@ -1,8 +1,42 @@
 .machine{
-    color: red;
+    color: rgb(0, 0, 0);
+    
     border :2px;
 }
 
-.header, .footer {
-    background-color: blue;
+.choco{
+    color: rgb(56, 10, 67);
+    text-align: center;
+    border :2px;
+}
+
+
+.header {
+    background-color: violet;
+    border: 2px ;
+    border-bottom-color: gray;
+    opacity: 0,2;
+
+}
+
+.footer {
+    
+    border: 2px ;
+    border-bottom-color: gray;
+    opacity: 0,8;
+    background-color: powderblue;
+}
+
+h3 {
+     font-family: verdana;
+      text-align: center;
+    font-size: 30px;
+    color: rgb(38, 106, 95);
+    
+}
+
+.hello click {
+    height: 200px;
+    width: 50%;
+    
 }
