@@ -13,16 +13,17 @@ class Machine extends React.Component {
     return (
       <div className="machine">
       
-    <h3>  j'adore le { this.props.title } , { this.props.isActive }</h3>
-      <p>  j'adore le { this.props.number } </p>
-      <button class= "hello">
-            Add #{this.props.number}
-         </button>
+    <h3>  j'adore vraiment { this.props.title } </h3>
+     <p>{ this.props.isActive }</p>
+    
         
            </div>
             );
+            <h4> Disponibilité </h4>
   }
  }
 
 // Le composant sera accessible avec le nom "Machine"
+ // <button class= "hello">//  Add #{this.props.number}
+//     </button>
 export default Machine;

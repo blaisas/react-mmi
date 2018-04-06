@@ -19,9 +19,9 @@ class App extends React.Component {
     super(props);
     this.state = {
       caf: [
-      {id: 0, name: "Caf6", isActive:false},
-       {id: 1, name: "Caf7", isActive:true},
-       {id: 2, name: "Caf8", isActive:false}
+      {id: 0, name: "La cafetière", isActive:false},
+       {id: 1, name: "Le café noisette", isActive:true},
+       {id: 2, name: "la théière", isActive:false}
       ]
 //      Cafs: {
 //      Caf1: "machine 1 def dans le index",
@@ -54,10 +54,11 @@ const mycaf =this.state.caf.map(machine =>
       <div id="machine" >
       
       <Header />
-      
-        <Machine name={this.state.caf[0].name} number="1" isActive="yes" title = "Café !"/>
-        <Machine name={this.state.caf[1].name} number="2" isActive="no" title = "Café noisette!"/>
-        <Machine name={this.state.caf[2].name} number="3" isActive="no" title = "thé !"/>
+      <h4> Nos machines </h4>
+        <Machine name={this.state.caf[0].name} number="1" isActive="Neuf" title = "La Cafetière !"/>
+        <Machine name={this.state.caf[1].name} number="2" isActive="Ocassion" title = "Le Café noisette!"/>
+        <Machine name={this.state.caf[2].name} number="3" isActive="Neuf" title = "La théière !"/>
+        <h4> Disponibilité </h4>
         <ul>{mycaf}</ul>
        <Footer />
        </div>

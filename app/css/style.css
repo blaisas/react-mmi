@@ -1,14 +1,12 @@
 .machine{
     color: rgb(0, 0, 0);
-    
     border :2px;
+    font-family: serif;
+      text-align: center;
+    font-size: 30px;
 }
 
-.choco{
-    color: rgb(56, 10, 67);
-    text-align: center;
-    border :2px;
-}
+
 
 
 .header {
@@ -35,8 +33,17 @@ h3 {
     
 }
 
+h4 {
+     font-family: sans-serif;
+      text-align: center;
+    font-size: 50px;
+    color: pink;
+    
+}
+
 .hello click {
     height: 200px;
     width: 50%;
+    color:red;
     
 }
