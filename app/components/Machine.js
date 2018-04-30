@@ -6,6 +6,7 @@
 import React from 'react';
 import Bouton from './Bouton.js';
 
+
 class Machine extends React.Component {
  
     render() {
@@ -19,7 +20,7 @@ class Machine extends React.Component {
         
            </div>
             );
-            <h4> Disponibilité </h4>
+            
   }
  }
 

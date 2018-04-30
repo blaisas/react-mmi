@@ -48,6 +48,17 @@ const mycaf =this.state.caf.map(machine =>
 <p className= {machine.isActive ? "Marchine active" : "machine"}> {machine.name}{machine.id} <button onClick={this.changeStatus.bind(this, machine.id)}>Click</button></p>
 </div>
 );
+
+
+    // Calcul des compteurs
+     const machinesIds = Object.keys(this.state.caf);
+     const totalActive = machinesIds.reduce((prevTotal, key) => {
+       const machine = this.state.caf[key];
+       const isAvailable = machine && machine.isActive;
+       // On incrémente le compteur à chaque fois que l'on trouve une machine active
+       return isAvailable ? prevTotal + 1 : prevTotal
+     }, 0);
+     const total = machinesIds.length;
    // Dans tous les cas, afficher
     return (
       
@@ -59,6 +70,9 @@ const mycaf =this.state.caf.map(machine =>
         <Machine name={this.state.caf[1].name} number="2" isActive="Ocassion" title = "Le Café noisette!"/>
         <Machine name={this.state.caf[2].name} number="3" isActive="Neuf" title = "La théière !"/>
         <h4> Disponibilité </h4>
+        <div className="counter">
+            <strong>{totalActive}</strong> / <strong>{total}</strong> Machines actives
+        </div>
         <ul>{mycaf}</ul>
        <Footer />
        </div>
@@ -66,6 +80,4 @@ const mycaf =this.state.caf.map(machine =>
 }
 
 }     
-   export default App;   
-
-   
+   export default App;
