@@ -4,13 +4,27 @@
  *
  */
 import React from 'react';
+import Bouton from './Bouton.js';
+
 
 class Machine extends React.Component {
-  render() {
+ 
+    render() {
     // Dans tous les cas, afficher
-    return <p>Machine 1</p>
+    return (
+      <div className="machine">
+      
+    <h3>  j'adore vraiment { this.props.title } </h3>
+     <p>{ this.props.isActive }</p>
+    
+        
+           </div>
+            );
+            
   }
-}
+ }
 
 // Le composant sera accessible avec le nom "Machine"
+ // <button class= "hello">//  Add #{this.props.number}
+//     </button>
 export default Machine;

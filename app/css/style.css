@@ -1,0 +1,49 @@
+.machine{
+    color: rgb(0, 0, 0);
+    border :2px;
+    font-family: serif;
+      text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+.header {
+    background-color: violet;
+    border: 2px ;
+    border-bottom-color: gray;
+    opacity: 0,2;
+
+}
+
+.footer {
+    
+    border: 2px ;
+    border-bottom-color: gray;
+    opacity: 0,8;
+    background-color: powderblue;
+}
+
+h3 {
+     font-family: verdana;
+      text-align: center;
+    font-size: 30px;
+    color: rgb(38, 106, 95);
+    
+}
+
+h4 {
+     font-family: sans-serif;
+      text-align: center;
+    font-size: 50px;
+    color: pink;
+    
+}
+
+.hello click {
+    height: 200px;
+    width: 50%;
+    color:red;
+    
+}
