@@ -54,6 +54,7 @@ class App extends React.Component {
     
     addMachineToState(name,active){
         console.log("pupute");
+        console.log( this.state.caf[1])
         this.state.caf.push({id: (this.state.caf.length + 1), name: name, isActive: active});
     }
 
@@ -100,7 +101,7 @@ class App extends React.Component {
                   <option value={this.state.select = false}>non</option>
               </select>
           </label>
-          <button type="button" onClick={this.addMachineToState(this.state.name,this.state.select)} > click </button>
+          <button type="button" onClick={this.addMachineToState.bind(this.state.name,this.state.select)}> click </button>s 
         </form>
         
     
